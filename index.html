@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberShop</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/assets/BARBERSHOP.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header -->
+
+    <header class="header" id="header">
+    
+            <img src="src/assets/BARBERSHOP.png" class="logo" alt="logo">
+            
+        <nav class="navbar">
+            <div id="close" class="fas fa-times"></div>
+        
+            <a class="nav_item" id="inicio">Início</a>
+            <a class="nav_item" id="corte">Cortes</a>
+            <a class="nav_item" id="localizacao">Localização</a>
+            <a class="nav_item"id="contato">Contato</a>
+
+        </nav>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+    </header>
+
+    <!-- Início -->
+    <section id="home" class="home">
+
+        <div class="content">
+            <h1 class="title">Estilo que <span>Transforma</span><br>Corte que <span>Encanta</span></h1>
+            <p class="description">A <span>BarberShop</span> é o lugar ideal para quem procura cortes de cabelo e barba além do comum. Atendendo desde 2020 contamos com uma equipe dedicada e um ambiente descontraído, oferecendo mais do que simples cortes, proporcionamos uma experiência única. </p>
+            <button class="btn" id="scheduleButton">Agendar Corte</button>
+        </div>
+
+        <div class="image">
+            <img src="src/assets/cabeleireiro.png" alt="barber" class="barber" title="Imagem de https://www.freepik.com/free-photo/portrait-mid-adult-bearded-male-barber-with-folded-arms_2518353.htm ">
+        </div>
+    </section>
+
+    <br><br><br><br><br>
+
+    <!-- Cortes -->
+    <section id="cortes" class="cortes">
+
+        <div class="content">
+            <h1 class="title">Um pouco sobre nossos <span>serviços</span></h1>
+            <p class="description">Atendemos de segunda a sexta, das 08:00 às 18:00.</p>
+        </div>
+        
+        <div class="cards">
+            <div class="card">
+                <div class="img">
+                    <img src="src/assets/corte-cabelo.jpg" alt="imagem-corte" title="Imagem de https://www.freepik.com/free-photo/young-man-barbershop-trimming-hair_12804095.htm#position=36 "> 
+                </div>
+                <p class="text">Corte de cabelo <span class="preco">R$ 40,00</span></p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="src/assets/corte-barba.jpg" alt="imagem-barba" title="Imagem de https://www.freepik.com/free-photo/handsome-man-barbershop-shaving-beard_12804101.htm#position=5 ">
+                </div>
+                <p class="text">Barba completa<span class="preco">R$ 30,00</span></p>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="src/assets/corte-e-barba.jpg" alt="imagem-corte-barba" title="Imagem de https://www.freepik.com/free-photo/handsome-man-shaving-beard-barbershop_12804105.htm#position=8 ">
+                </div>
+                <p class="text">Corte e barba <span class="preco">R$ 65,00</span></p>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br><br><br><br>
+    
+    <!-- Localização -->
+
+    <section id="local" class="local">
+    
+        <div class="content">
+            <h1 class="title"><span>Onde</span> estamos localizados</h1>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6164449.690656349!2d-53.945404234144576!3d-22.47145046894842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597d462f58ad%3A0x1e5241e2e17b7c17!2sS%C3%A3o%20Paulo!5e1!3m2!1spt-BR!2sbr!4v1703697746625!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <br><br><br><br><br>
+    
+    <!-- Contato -->
+
+    <section id="contact" class="contact">
+
+        <div class="content">
+            <div class="text">
+                <h4><span>Agende</span> seu corte...</h4>
+                <h5>Envie-nos uma <span>mensagem!</span></h5>
+            </div>
+    
+            <div class="forms">
+                <label>Nome Completo</label>
+                <input type="text" class="userName" id="userName">
+                <br>
+                <label>Data de Agendamento</label>
+                <input type="date" class="date" id="date">
+                <button id="messageButton">Enviar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <br><br><br><br><br>
+
+    
+    <!-- Footer -->
+
+    <section id="footer" class="footer">
+
+        <div class="image">
+            <img src="src/assets/logo.png" alt="logo">
+        </div>
+
+        <div class="content">
+            <h1>BarberShop - 2023</h1>
+        </div>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </section>
+
+</body>
+<!-- GSAP CDN LINK -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+<script src="src/script.js"></script>
+</html>

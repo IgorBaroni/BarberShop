@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+* {
+    font-family: 'Rethink Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* opacity: 0; */
+    background: #121212;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #ffffff91;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 2rem 9%;
+    z-index: 2;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.header img {
+    height: 6rem;
+    border-radius: 50%;
+}
+.logo{
+    opacity: 0;
+}
+
+.header .navbar {
+    margin-left: 25%;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.header .navbar a:hover {
+    color: #FFD700;
+}
+
+.header .navbar #close{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.header #menu{
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.navbar .nav_item{
+    opacity: 0;
+}
+.home {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.home .content {
+    padding-top: 6.5rem;
+}
+
+.home .content .title {
+    font-size: 5rem;
+    color: #F1F1F1;
+    opacity: 0;
+}
+
+.home .content .title span {
+    color: #FFD700;
+}
+.home .content .description{
+    opacity: 0;
+}
+.home .content .description span {
+    color: #FFD700;
+}
+
+.home .content .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #F1F1F1;
+    background: #333333;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: none;
+    transition: .3s;
+    opacity: 0;
+}
+
+.home .content .btn:hover {
+    background: #FFD700;
+    transition: .3s;
+    color: #000;
+}
+
+.home .content .description {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #F1F1F1;
+}
+
+.home .image{
+    opacity: 0;
+}
+
+.home .image img {
+    height: 70vh;
+    margin-left: 40%;
+    filter: drop-shadow(3px 0px 5px #FFF);
+}
+
+.cortes {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+}
+
+
+.cortes .content{
+    margin: 5.5% 0;
+    opacity: 0;
+}
+
+.cortes .content .title {
+    font-size: 5rem;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.cortes .content .title span {
+    color: #FFD700;
+}
+
+.cortes .content .description {
+    font-size: 2.3rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.cortes .cards{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2rem;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cortes .cards .card{
+    overflow: hidden;
+    height: 50vh;
+    width: 20vw;
+    background-color: #333333;
+    transition: all 0.2s;
+    filter: drop-shadow(0px 0px 2px #ffffff);
+    border-radius: 2%;
+    opacity: 0;
+}
+
+.cortes .cards .card:hover{
+    filter: drop-shadow(0px 0px 2px #FFD700);
+}
+
+.cortes .cards .card .img{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 2px solid #f1f1f1;
+    height: 80%;
+}
+
+.cortes .cards .card .img:hover img{
+    transform: scale(1.1);
+}
+
+.cortes .cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cortes .cards .card .text{
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    margin-top: 7%;
+    font-size: 1.7rem;
+    color: #f1f1f1
+}
+
+.cortes .cards .card .text .preco{
+    padding: .2rem 1rem;
+    margin-left: 5%;
+    color: #121212;
+    background: #FFD700;
+    border-radius: 2rem;
+    border: none;
+    transition: .3s;
+}
+
+.local{
+    margin-top: 10%;
+}
+
+
+.local .content {
+    margin: 5.5% 0;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+}
+
+.local .content .title {
+    font-size: 5rem;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.local .content .title span {
+    color: #FFD700;
+}
+
+.local .content .mapa {
+    width: 100%;
+    opacity: 0;
+}
+
+.local .content .mapa:hover{
+    filter: drop-shadow(0px 0px 2px #FFD700);
+}
+
+.contact{
+    margin-top: 2%;
+}
+
+.contact .content {
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.5rem;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+}
+
+.contact .content .text {
+    font-size: 5rem;
+    color: #F1F1F1;
+    text-align: center;
+}
+
+.contact .content .text span {
+    color: #FFD700;
+}
+
+.contact .content .forms {
+    margin-left: 3rem;
+    border-left: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+}
+
+
+.contact .content .forms label {
+    font-size: 2rem;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.contact .content .forms input {
+    font-size: 1.9rem;
+    text-align: center;
+    border-radius: 2%;
+    border: none;
+    padding: 2px 0;
+    background: #333333;
+    color: #f1f1f1;
+}
+
+.contact .content .forms input:hover{
+    filter: drop-shadow(0px 0px 2px #FFD700);
+}
+
+.contact .content .forms input:focus {
+    outline: none;
+    filter: drop-shadow(0px 0px 2px #FFD700);
+}
+
+.contact .content .forms .userName {
+    width: 70%;
+}
+
+.contact .content .forms .date::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.contact button {
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #F1F1F1;
+    background: #333333;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: .3s;
+    border: none;
+    margin-top: 5%;
+}
+
+.contact button:hover {
+    background: #FFD700;
+    transition: .3s;
+    color: #000;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 30% 30% 25%;
+    gap: 5rem;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #151515;
+}
+
+.footer .image img {
+    height: 20vh;
+    border-radius: 20%;
+}
+
+.footer .content h1 {
+    color: #FFF;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2em;
+}
+
+.footer .social-links {
+    margin-left: 10%;
+}
+
+.footer .social-links a {
+    font-size: 3em;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: all 0.1s;
+}
+
+.footer .social-links a:hover {
+    color: #FFD700;
+}
+
+@media (max-width: 1050px){
+    .cortes .cards .card .text {
+        font-size: 1.5rem;
+        margin-top: 2%;
+    }
+    .cortes .cards .card .text .preco{
+        padding: .2rem 1rem;
+        transition: .3s;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        grid-template-columns: 100%;
+    }
+    .cortes .cards .card .text{
+        margin: 5%;
+        font-size: 1.8rem;
+    }
+    
+}
+
+
+@media (max-width: 800px){
+    .cortes .cards {
+        grid-template-columns: 100%;
+        place-items: center;
+    }
+    
+    .cortes .cards .card{
+        width: 40rem;
+    }
+    .cortes .cards .card .text{
+        margin: 5%;
+        font-size: 2rem;
+    }
+
+    .header #menu{
+        display: inline-block;
+        text-align: end;
+    }
+
+    .header .navbar{
+        position: fixed;
+        top: 0; right: -105%;
+        width: 30rem;
+        background: #3333339d;
+        backdrop-filter: blur(10px);
+        transition: .5s;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        z-index: 1200;    
+    }
+    
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar #close{
+        display: block;
+    }
+    .header .navbar a{
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .contact .content .text {
+        font-size: 4rem;
+    }
+    
+
+}
+
+@media (max-width: 620px) {
+    .contact .content .text {
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .home .content {
+        padding-top: 8.5rem;
+    }
+
+    .header .navbar{
+        width: 20rem;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+    }
+
+    .cortes .content .title{
+        font-size: 3rem;
+    }
+
+    .cortes .content .description{
+        font-size: 2rem;
+    }
+
+    .cortes .cards {
+        grid-template-columns: 100%;
+    }
+    
+    .cortes .cards .card{
+        width: 30rem;
+    }
+
+    .cortes .cards .card .text{
+        font-size: 1.8rem;
+    }
+
+
+    .local .content .title {
+        font-size: 3rem;
+    }
+
+    .local .content .mapa {
+        height: 30rem;
+    }
+
+    .contact .content .text {
+        font-size: 3rem;
+    }
+
+    .contact .content {
+        grid-template-columns: 100%;
+    }
+
+    .contact .content .forms {
+        border-top: 2px solid #fff;
+        border-left: none;
+    }
+
+    .contact .content .forms .userName {
+        width: 90%;
+    }
+
+    .contact .content .forms label:nth-child(1) {
+        margin-top: 1rem;
+    }
+
+    .footer .image img {
+        height: 10rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .home .image img {
+        margin-left: 15%;
+    }
+
+    .home .content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px){
+    .cortes .cards {
+        grid-template-columns: 100%;
+        place-items: baseline;
+    }
+}
